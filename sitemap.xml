@@ -2,7 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rycan.top/post/0.html</loc>
+    
+    <lastmod>2023-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/charts/index.html</loc>
+    
+    <lastmod>2023-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/census/index.html</loc>
+    
+    <lastmod>2023-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/about/index.html</loc>
+    
+    <lastmod>2023-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/link/index.html</loc>
+    
+    <lastmod>2023-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/post/16107.html</loc>
+    
+    <lastmod>2023-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/post/f7dce0fd.html</loc>
+    
+    <lastmod>2023-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://rycan.top/post/57317.html</loc>
+    
+    <lastmod>2023-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/random/random.html</loc>
     
     <lastmod>2023-06-30</lastmod>
     
@@ -29,15 +101,6 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/post/f7dce0fd.html</loc>
-    
-    <lastmod>2023-06-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://rycan.top/MessageBoard/index.html</loc>
     
     <lastmod>2023-06-29</lastmod>
@@ -50,15 +113,6 @@
     <loc>http://rycan.top/post/4a17b156.html</loc>
     
     <lastmod>2023-06-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://rycan.top/about/index.html</loc>
-    
-    <lastmod>2023-06-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -149,24 +203,6 @@
     <loc>http://rycan.top/fish/index.html</loc>
     
     <lastmod>2023-06-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://rycan.top/link/index.html</loc>
-    
-    <lastmod>2023-06-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://rycan.top/post/16107.html</loc>
-    
-    <lastmod>2023-06-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

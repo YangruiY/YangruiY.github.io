@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>WILL DO</title>
+    <url>/post/55b391ce.html</url>
+    <content><![CDATA[<p>[首页词条完善][<a href="https://www.fomal.cc/posts/eec9786.html">https://www.fomal.cc/posts/eec9786.html</a>]<br>
+[四个主题][<a href="https://www.fomal.cc/posts/5389e93f.html">https://www.fomal.cc/posts/5389e93f.html</a>  <a href="https://www.fomal.cc/posts/d739261b.html">https://www.fomal.cc/posts/d739261b.html</a>]<br>
+[挂载猫咪][<a href="https://www.fomal.cc/posts/5389e93f.html">https://www.fomal.cc/posts/5389e93f.html</a>]<br>
+[节日弹窗与公祭日变灰][<a href="https://www.fomal.cc/posts/2d7ac914.html">https://www.fomal.cc/posts/2d7ac914.html</a>]<br>
+[日记][<a href="https://www.fomal.cc/posts/d1927166.html">https://www.fomal.cc/posts/d1927166.html</a>]<br>
+[倒计时][<a href="https://www.fomal.cc/posts/d1927166.html">https://www.fomal.cc/posts/d1927166.html</a>]</p>
+]]></content>
+      <categories>
+        <category>WILL DO</category>
+      </categories>
+      <tags>
+        <tag>TODO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>a-搭建整个博客的过程简单记录</title>
     <url>/post/19656.html</url>
     <content><![CDATA[<!-- raw的外挂标签是告诉渲染引擎这段代码不用渲染。 -->
@@ -121,11 +138,6 @@ Content to Reveal Here
 ]]></content>
   </entry>
   <entry>
-    <title>Random Article</title>
-    <url>/post/0.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>test2</title>
     <url>/post/13bb8d58.html</url>
     <content><![CDATA[<h1>你好</h1>
@@ -144,6 +156,18 @@ Content to Reveal Here
     <url>/post/f7dce0fd.html</url>
     <content><![CDATA[<h1>你好</h1>
 <p>这是关于框架得测试</p>
+<p><i class="iconfont icon-rat"></i><br>
+<i class="iconfont icon-ox"></i><br>
+<i class="iconfont icon-tiger"></i><br>
+<i class="iconfont icon-rabbit"></i><br>
+<i class="iconfont icon-dragon"></i><br>
+<i class="iconfont icon-snake"></i><br>
+<i class="iconfont icon-horse"></i><br>
+<i class="iconfont icon-goat"></i><br>
+<i class="iconfont icon-monkey"></i><br>
+<i class="iconfont icon-rooster"></i><br>
+<i class="iconfont icon-dog"></i><br>
+<i class="iconfont icon-boar"></i></p>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -168,12 +192,9 @@ Content to Reveal Here
       </tags>
   </entry>
   <entry>
-    <title>搭建整个博客的过程简单记录</title>
-    <url>/post/44109.html</url>
-    <content><![CDATA[<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-  <iframe src="//player.bilibili.com/player.html?aid=xxx&cid=yyy&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
-</div>
-]]></content>
+    <title>Random Article</title>
+    <url>/post/0.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>搭建整个博客的过程简单记录</title>
@@ -238,6 +259,14 @@ Content to Reveal Here
 </div>
 <div class="tabs" id="test1"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test1-1">test1 1</button></li><li class="tab"><button type="button" data-href="#test1-2">test1 2</button></li><li class="tab"><button type="button" data-href="#test1-3">test1 3</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test1-1"><p><strong>This is Tab 1.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-2"><p><strong>This is Tab 2.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test1-3"><p><strong>This is Tab 3.</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
 <div class="tabs" id="test4"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#test4-1">第一个Tab</button></li><li class="tab"><button type="button" data-href="#test4-2"><i class="fab fa-apple-pay" style="text-align: center;"></i></button></li><li class="tab"><button type="button" data-href="#test4-3"><i class="fas fa-bomb"></i>炸弹</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="test4-1"><p><strong>tab名字为第一个Tab</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test4-2"><p><strong>只有图标 没有Tab名字</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="test4-3"><p><strong>名字+icon</strong></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>]]></content>
+  </entry>
+  <entry>
+    <title>搭建整个博客的过程简单记录</title>
+    <url>/post/44109.html</url>
+    <content><![CDATA[<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+  <iframe src="//player.bilibili.com/player.html?aid=xxx&cid=yyy&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe>
+</div>
+]]></content>
   </entry>
   <entry>
     <title>Hello World</title>

@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rycan.top/post/55b391ce.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/post/f7dce0fd.html</loc>
+    
+    <lastmod>2023-07-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://rycan.top/post/0.html</loc>
     
     <lastmod>2023-06-30</lastmod>
@@ -48,15 +66,6 @@
   
   <url>
     <loc>http://rycan.top/post/16107.html</loc>
-    
-    <lastmod>2023-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://rycan.top/post/f7dce0fd.html</loc>
     
     <lastmod>2023-06-30</lastmod>
     
@@ -218,6 +227,13 @@
 
   
   <url>
+    <loc>http://rycan.top/tags/TODO/</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://rycan.top/tags/hexo/</loc>
     <lastmod>2023-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -246,6 +262,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>http://rycan.top/categories/WILL-DO/</loc>
+    <lastmod>2023-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>http://rycan.top/categories/Java/</loc>

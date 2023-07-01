@@ -1,4 +1,4 @@
-hexo.extend.generator.register('random', function (locals) {
+extend.generator.register('random', function (locals) {
     const config = hexo.config.random || {}
     const posts = []
     for (const post of locals.posts.data) {

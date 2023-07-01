@@ -2364,3 +2364,12 @@ h6::before {
 }
 
 /* 可根据需要进一步添加样式调整 */
+
+
+svg.icon {
+    width: 1.28em;
+    height: 1.28em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}

@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://rycan.top/tags/index.html</loc>
+    
+    <lastmod>2023-07-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/categories/index.html</loc>
+    
+    <lastmod>2023-07-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/camera/index.html</loc>
+    
+    <lastmod>2023-07-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/post/e8b61f90.html</loc>
+    
+    <lastmod>2023-07-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://rycan.top/post/d48132d3.html</loc>
     
     <lastmod>2023-07-03</lastmod>
@@ -263,15 +299,6 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/post/e8b61f90.html</loc>
-    
-    <lastmod>2023-07-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://rycan.top/post/eca5e3e6.html</loc>
     
     <lastmod>2023-07-03</lastmod>
@@ -371,15 +398,6 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/random/random.html</loc>
-    
-    <lastmod>2023-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://rycan.top/MessageBoard/index.html</loc>
     
     <lastmod>2023-06-29</lastmod>
@@ -434,33 +452,6 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/tags/index.html</loc>
-    
-    <lastmod>2023-06-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://rycan.top/camera/index.html</loc>
-    
-    <lastmod>2023-06-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://rycan.top/categories/index.html</loc>
-    
-    <lastmod>2023-06-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://rycan.top/css/modify.css</loc>
     
     <lastmod>2023-06-21</lastmod>
@@ -502,14 +493,14 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/tags/Kafka/</loc>
+    <loc>http://rycan.top/tags/Java/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://rycan.top/tags/Maven/</loc>
+    <loc>http://rycan.top/tags/Kafka/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -523,14 +514,14 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/tags/ElasticSearch/</loc>
+    <loc>http://rycan.top/tags/Maven/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://rycan.top/tags/Java/</loc>
+    <loc>http://rycan.top/tags/ElasticSearch/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -565,6 +556,13 @@
   </url>
   
   <url>
+    <loc>http://rycan.top/tags/Spring5/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://rycan.top/tags/ShardingSphere5/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -572,7 +570,7 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/tags/Spring5/</loc>
+    <loc>http://rycan.top/tags/SpringMVC/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -593,7 +591,14 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/tags/SpringMVC/</loc>
+    <loc>http://rycan.top/tags/Zookeeper/</loc>
+    <lastmod>2023-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://rycan.top/tags/hexo/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -601,13 +606,6 @@
   
   <url>
     <loc>http://rycan.top/tags/SpringSecurity/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://rycan.top/tags/Zookeeper/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -622,13 +620,6 @@
   
   <url>
     <loc>http://rycan.top/tags/SpringCloud/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://rycan.top/tags/hexo/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -672,13 +663,6 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/categories/MySQL/</loc>
-    <lastmod>2023-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://rycan.top/categories/Java/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -686,14 +670,14 @@
   </url>
   
   <url>
-    <loc>http://rycan.top/categories/redis/</loc>
+    <loc>http://rycan.top/categories/MySQL/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://rycan.top/categories/redis/Future/</loc>
+    <loc>http://rycan.top/categories/redis/</loc>
     <lastmod>2023-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

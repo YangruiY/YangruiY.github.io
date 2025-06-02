@@ -1,9 +1,293 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
-  <diagram name="第 1 页" id="55iX_-47RPbCPZVMsPtO">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3" pages="2">
+  <diagram name="活动创建及状态扭转流程" id="55iX_-47RPbCPZVMsPtO">
+    <mxGraphModel dx="1186" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jmmiFKiIGSJ3GmXUtw6S-1" value="创建拍卖活动接口&amp;nbsp; &amp;nbsp;createAuctionActivity" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="20" width="170" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="DcjzgRXuvmd08bLrjLiu" name="订单odc 消息流程">
+    <mxGraphModel dx="7099" dy="4117" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-1" target="ga1_cihQjjDoHvQJQ_7H-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="146.25" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-71" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-1" target="ga1_cihQjjDoHvQJQ_7H-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-1" value="topic = 提单消息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="76.25" y="60" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-5" value="ODCMessageBO :&amp;nbsp;&lt;div&gt;1. 订单信息：父订单、子订单、pin、订单类型、订单拓展信息、sendpay&lt;/div&gt;&lt;div&gt;2. 购物车信息：父订单sku列表（skuName 、 skuId）、商品标列表&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="526.88" y="-180" width="820" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-7" target="ga1_cihQjjDoHvQJQ_7H-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="146.25" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-7" value="前置校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83.75" y="130" width="125" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-9" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="208.75" y="120" width="37.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-11" value="1. 订单信息存在且不为null &amp;amp;&amp;nbsp;&lt;div&gt;订单id 存在&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="226.25" y="120" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-13" value="2. 购物车信息存在且不为null &amp;amp;购物车信息中的skuId 存在" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="236.25" y="180" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-17" target="ga1_cihQjjDoHvQJQ_7H-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-17" value="1、获取购物车信息里面的 skuId 列表&lt;div&gt;2、获取 订单信息 里面的订单id 和父订单id 、用户pin&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry y="230" width="292.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-18" target="ga1_cihQjjDoHvQJQ_7H-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-18" value="去数据库中查找对应的唯一&lt;b&gt;获拍&lt;/b&gt;记录：&amp;nbsp; 异常：要是不存在或者存在多个，mq 重试&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;查找方式有两种&lt;/span&gt;&lt;div&gt;1、根据父单id正常存在、sku列表&amp;nbsp; 和 pin&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 父单id&amp;nbsp; =&amp;nbsp; 父单id&amp;nbsp; 或者 子单id = 子单id&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;amp;&amp;nbsp; &amp;nbsp;pin = pin&amp;nbsp; &amp;amp; skuid 在skuid 列表中&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2、根据子订单id 和 pin&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 父单id&amp;nbsp; =&amp;nbsp; 子单id&amp;nbsp; 或者 子单id = 子单id&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;amp;&amp;nbsp; &amp;nbsp;pin = pin&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-103.75" y="300" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-20" target="ga1_cihQjjDoHvQJQ_7H-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-20" value="对比环境，过滤掉不匹配的环境" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-37.059999999999995" y="440" width="366.62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-22" target="ga1_cihQjjDoHvQJQ_7H-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-22" value="更新数据库：&lt;div&gt;1、更新保证金表的&amp;nbsp; &amp;nbsp; 最终退款金额&amp;nbsp; 和 抵扣金额&lt;/div&gt;&lt;div&gt;2、更新获拍表的订单状态：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-- 要是父订单存在，根据&amp;nbsp; 获拍id 、 pin 去&amp;nbsp; 更新获拍表的订单id 、 订单类型&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-- 否则的话，&lt;span style=&quot;background-color: initial;&quot;&gt;根据&amp;nbsp; 获拍id 、 订单状态为 3,10,20,30&amp;nbsp; 和 pin 更新获拍表状态（3-&amp;gt;10 其余保持当前状态不变）、订单类型&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-190.62" y="570" width="673.75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-25" value="解锁" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-16.75" y="680" width="326" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-27" target="ga1_cihQjjDoHvQJQ_7H-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-27" value="&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;加锁&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-16.74" y="500" width="326" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-31" target="ga1_cihQjjDoHvQJQ_7H-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="936.87" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-73" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-31" target="ga1_cihQjjDoHvQJQ_7H-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-31" value="topic = 完成消息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="866.87" y="70" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-33" target="ga1_cihQjjDoHvQJQ_7H-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="936.87" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-33" value="前置校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="874.37" y="140" width="125" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-34" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="999.37" y="130" width="37.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-35" value="1. 订单信息存在且不为null &amp;amp;&amp;nbsp;&lt;div&gt;订单id 存在&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1016.87" y="130" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-36" value="2. 购物车信息存在且不为null &amp;amp;购物车信息中的skuId 存在" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1026.87" y="190" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-38" target="ga1_cihQjjDoHvQJQ_7H-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940.62" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-38" value="1、获取购物车信息里面的 skuId 列表&lt;div&gt;2、获取 订单信息 里面的订单id 和父订单id 、用户pin&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="790.62" y="240" width="292.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-40" target="ga1_cihQjjDoHvQJQ_7H-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-40" value="去数据库中查找对应的唯一&lt;b&gt;获拍&lt;/b&gt;记录：&amp;nbsp; 异常：要是不存在或者存在多个，mq 重试&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;查找方式有两种&lt;/span&gt;&lt;div&gt;1、根据父单id正常存在、sku列表&amp;nbsp; 和 pin&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 父单id&amp;nbsp; =&amp;nbsp; 父单id&amp;nbsp; 或者 子单id = 子单id&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;amp;&amp;nbsp; &amp;nbsp;pin = pin&amp;nbsp; &amp;amp; skuid 在skuid 列表中&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2、根据子订单id 和 pin&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 父单id&amp;nbsp; =&amp;nbsp; 子单id&amp;nbsp; 或者 子单id = 子单id&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;amp;&amp;nbsp; &amp;nbsp;pin = pin&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="686.87" y="310" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-42" target="ga1_cihQjjDoHvQJQ_7H-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-42" value="对比环境，过滤掉不匹配的环境" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="753.5600000000001" y="450" width="366.62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-44" target="ga1_cihQjjDoHvQJQ_7H-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-44" value="更新数据库：&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;更新获拍表的订单状态：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-- 要是获拍状态是 履约完成状态，直接返回&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-- 要是此时的订单状态不是 支付完成，抛出异常&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp;-- 否则的话，&lt;span style=&quot;background-color: initial;&quot;&gt;根据&amp;nbsp; 获拍id 、 订单状态为&amp;nbsp; 20&amp;nbsp; 和 pin 更新获拍表状态（为 履约完成 50）、订单完成的时间&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="600" y="580" width="673.75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-45" value="解锁" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="773.87" y="910" width="326" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-47" target="ga1_cihQjjDoHvQJQ_7H-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-47" value="&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;加锁&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="773.88" y="510" width="326" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-48" target="ga1_cihQjjDoHvQJQ_7H-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-48" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、判断是否是交保活动&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.1 是的话，获取当前用户当前活动的保证金信息，获取保证金订单id 和 订单类型：是否是全球购&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、获取商品类型，POP 还是 自营&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3、先更新保证金订单的主体&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- POP 商品的话需要先获取保证金主体，主题存在才需要修改保证金的主体，否则不更新保证金主体&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 自营商品的 话直接修改保证金主体&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;4、再把保证金订单拉完成&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="600" y="720" width="673.75" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-52" target="ga1_cihQjjDoHvQJQ_7H-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1753.87" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-74" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-52" target="ga1_cihQjjDoHvQJQ_7H-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-52" value="topic = 完成消息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1683.87" y="70" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-54" target="ga1_cihQjjDoHvQJQ_7H-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1753.87" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-54" value="前置校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1691.37" y="140" width="125" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-55" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="1816.37" y="130" width="37.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-56" value="1. 订单信息存在且不为null &amp;amp;&amp;nbsp;&lt;div&gt;订单id 存在&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1833.87" y="130" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-57" value="2. 购物车信息存在且不为null &amp;amp;购物车信息中的skuId 存在" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1843.87" y="190" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-59" target="ga1_cihQjjDoHvQJQ_7H-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1757.62" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-59" value="1、获取购物车信息里面的 skuId 列表&lt;div&gt;2、获取 订单信息 里面的订单id 和父订单id 、用户pin&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1607.62" y="240" width="292.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-61" target="ga1_cihQjjDoHvQJQ_7H-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-61" value="去数据库中查找对应的唯一&lt;b&gt;获拍&lt;/b&gt;记录：&amp;nbsp; 异常：要是不存在或者存在多个，mq 重试&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;查找方式有两种&lt;/span&gt;&lt;div&gt;1、根据父单id正常存在、sku列表&amp;nbsp; 和 pin&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 父单id&amp;nbsp; =&amp;nbsp; 父单id&amp;nbsp; 或者 子单id = 子单id&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;amp;&amp;nbsp; &amp;nbsp;pin = pin&amp;nbsp; &amp;amp; skuid 在skuid 列表中&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2、根据子订单id 和 pin&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 父单id&amp;nbsp; =&amp;nbsp; 子单id&amp;nbsp; 或者 子单id = 子单id&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;amp;&amp;nbsp; &amp;nbsp;pin = pin&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1503.87" y="310" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-63" target="ga1_cihQjjDoHvQJQ_7H-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-63" value="对比环境，过滤掉不匹配的环境" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1570.56" y="450" width="366.62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-65" target="ga1_cihQjjDoHvQJQ_7H-66">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1753.875" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-65" value="更新数据库：&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;更新获拍表的订单状态：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-- 要是获拍状态不是 取消或者退款状态，直接返回&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-- 要是此时的订单状态不是 提单中、支付完成、提单完成未支付，则抛出异常&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp;--&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;要是此时的订单状态是 提单中、提单完成未支付&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;根据&amp;nbsp; 获拍id 、 订单状态为&amp;nbsp; 3、10&amp;nbsp; 和 pin 更新获拍表状态（为 取消订单 30）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp;--&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;要是此时的订单状态是 支付完成&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;根据&amp;nbsp; 获拍id 、 订单状态为&amp;nbsp; 20&amp;nbsp; 和 pin 更新获拍表状态（为 退款订单 40）&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1369.88" y="580" width="768" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-66" value="解锁" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1590.87" y="740" width="326" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-68" target="ga1_cihQjjDoHvQJQ_7H-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-68" value="&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;加锁&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1590.88" y="510" width="326" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-76" target="ga1_cihQjjDoHvQJQ_7H-78">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2743.99" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-76" target="ga1_cihQjjDoHvQJQ_7H-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-76" value="topic = 对账消息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2673.99" y="80" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-78" target="ga1_cihQjjDoHvQJQ_7H-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2743.99" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-78" value="前置校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2681.49" y="150" width="125" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-79" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="2806.49" y="140" width="37.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-80" value="1. 对账消息内容不为null&amp;nbsp; &amp;nbsp; &amp;amp;&amp;nbsp;&lt;br&gt;&lt;div&gt;将对账消息序列化之后其中的订单id 存在&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2843.99" y="140" width="236.01" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-81" value="2. 根据对账信息判断支付标志是否符合要求&lt;div&gt;&amp;nbsp;-- 获取对账类型和对账结果&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 要是 对账类型是&amp;nbsp;在下单时用虚拟资产全额支付订单或者二次拆分先款子单 或者是 用户在线付款或者货到付款&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 要是 对账结果是&amp;nbsp;超额支付或者全额支付&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 符合上述两个才会继续执行后续&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2843.99" y="200" width="646.01" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-83" target="ga1_cihQjjDoHvQJQ_7H-85">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2747.7299999999996" y="510" as="targetPoint" />
+            <mxPoint x="2743.9800000000005" y="460" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-83" value="&lt;div&gt;获取 订单信息 里面的订单id 和父订单id 、用户pin&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2597.74" y="370" width="292.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-85" target="ga1_cihQjjDoHvQJQ_7H-87">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-85" value="去数据库中查找对应的唯一&lt;b&gt;获拍&lt;/b&gt;记录：&amp;nbsp; 异常：要是不存在或者存在多个，mq 重试&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;查找方式有两种&lt;/span&gt;&lt;div&gt;1、根据父单id正常存在、sku列表&amp;nbsp; 和 pin&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 父单id&amp;nbsp; =&amp;nbsp; 父单id&amp;nbsp; 或者 子单id = 子单id&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;amp;&amp;nbsp; &amp;nbsp;pin = pin&amp;nbsp; &amp;amp; skuid 在skuid 列表中&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2、根据子订单id 和 pin&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 父单id&amp;nbsp; =&amp;nbsp; 子单id&amp;nbsp; 或者 子单id = 子单id&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;amp;&amp;nbsp; &amp;nbsp;pin = pin&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2493.9799999999996" y="490" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-87" target="ga1_cihQjjDoHvQJQ_7H-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-87" value="对比环境，过滤掉不匹配的环境" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2560.6699999999996" y="630" width="366.62" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-89" target="ga1_cihQjjDoHvQJQ_7H-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-89" value="更新数据库：&lt;div&gt;&lt;div&gt;1、更新保证金表的&amp;nbsp; &amp;nbsp; 最终退款金额&amp;nbsp; 和 抵扣金额&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、更新获拍表的订单状态：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-- 要是获拍状态是 支付完成 或者 履约完成状态，直接返回&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-- 要是此时的订单状态不是 提单中、提单完成未支付，则抛出异常&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp;--&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;要是此时的订单状态是 提单中、提单完成未支付&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;根据&amp;nbsp; 获拍id 、 订单状态为&amp;nbsp; 3、10&amp;nbsp; 和 pin 更新获拍表状态（为 支付完成 20）和完成支付的实际时间&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2308.97" y="760" width="870.01" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-90" value="解锁" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2580.9799999999996" y="1260" width="326" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-92" target="ga1_cihQjjDoHvQJQ_7H-89">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-92" value="&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;加锁&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2580.99" y="690" width="326" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-93" value="DuiZhangMessageBO :&amp;nbsp;&lt;div&gt;1、对账消息内容&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、拓展字段&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3、订单信息：父订单、子订单、pin、订单类型、订单拓展信息、sendpay&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2538.99" y="-120" width="410" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ga1_cihQjjDoHvQJQ_7H-95" target="ga1_cihQjjDoHvQJQ_7H-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ga1_cihQjjDoHvQJQ_7H-95" value="1、针对保证金二期执行下述操作&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 交保商品：获取用户保证金信息&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 要是保证金状态&lt;b&gt;不&lt;/b&gt;是 200(已拍中，退款中-售后取消)&amp;nbsp; 、201(已获拍、退款完成-售后取消) ，修改保证金订单的sendPay(1237-3 - 已付尾款)&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 要是没有退款金额（保证金 &amp;lt; 货款），不需要执行退款，更新保证金表的状态是 191(拍中部分抵货款)&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 要是有退款金额（保证金 &amp;gt; 货款），需要执行退款，调用快退进行退款（原返，半退的方式），&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;更新保证金表的状态是 192(拍中全部抵货款，多余金额退款中)&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、针对保证金一起执行下述操作&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 交保商品：获取用户授权信息&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 冻结用户的保证金金额&lt;br&gt;&lt;div&gt;3、发送此活动已完成成交的信息到 topic&amp;nbsp;&amp;nbsp;&lt;span style=&quot;color: rgb(106, 171, 115); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34);&quot;&gt;auctionActivityStatus_yfb&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;中&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-- 获取活动信息&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2294.98" y="970" width="898.02" height="230" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

@@ -1,11 +1,378 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3" pages="2">
   <diagram name="活动创建及状态扭转流程" id="55iX_-47RPbCPZVMsPtO">
-    <mxGraphModel dx="1003" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1227" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jmmiFKiIGSJ3GmXUtw6S-1" target="vqVwxl0X2MsNY-UUK2l2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="jmmiFKiIGSJ3GmXUtw6S-1" value="创建拍卖活动接口&amp;nbsp; &amp;nbsp;createAuctionActivity" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="160" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-1" target="vqVwxl0X2MsNY-UUK2l2-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-1" value="加锁&amp;nbsp; reqId 维度" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="240" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-3" target="vqVwxl0X2MsNY-UUK2l2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-3" value="参数校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="286.25" y="300" width="97.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-5" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="382.5" y="310" width="62.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-6" value="1、sourceSystemId 的&lt;font color=&quot;#ff350d&quot;&gt;降级开关&lt;/font&gt; &amp;amp; 是否符合配置的sourceSystemId" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="290" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-7" value="2、公共参数存在 &amp;amp; 升价拍 和 降价拍 各自特有的参数也要存在" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="390" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="335.090909090909" y="420.0466200466201" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-8" value="参数转换" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="374" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-12" target="vqVwxl0X2MsNY-UUK2l2-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-12" value="参数校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="286.25" y="420" width="97.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-13" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="382.5" y="430" width="62.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-14" value="1、升价拍 和 降价拍 各自特有的参数分别符合各自的要求" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="430" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-15" target="vqVwxl0X2MsNY-UUK2l2-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-15" value="逻辑校验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="286.25" y="540" width="97.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-18" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="383.75" y="522.5" width="46.25" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-19" value="1、根据报名id(reqId) 和 sourceSystemId 查询 活动表 是否有对应的活动数据，有的话直接返回已有的&amp;nbsp; 活动id&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="522.5" width="345" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-20" value="2、根据skuId 查询 活动表 是否存在状态是 10 20 30 的活动，有的话 ，遍历已有活动 和 报名的活动 ，要求每个报名的活动的预约时间和结束时间之间不能重合(相等也不行)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="580" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-22" target="vqVwxl0X2MsNY-UUK2l2-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-22" value="获取配置的 时间： 升价拍结算延迟时间 和 传统拍、荷兰拍的最晚提单时间&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="640" width="290" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-24" target="vqVwxl0X2MsNY-UUK2l2-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-24" value="上游检验" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="286.25" y="700" width="97.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-26" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="382.5" y="692" width="47.5" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-27" value="1、检查活动上下柜状态" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="445" y="680" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-28" value="2、检查全国库存" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="445" y="710" width="132.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-29" value="3、校验规则中心" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="445" y="740" width="122.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-30" value="分别有对应的降级开关" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="622.5" y="705" width="155" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-31" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="580" y="692" width="42.5" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-32" target="vqVwxl0X2MsNY-UUK2l2-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-32" value="设置主键" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="235" y="800" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-34" target="vqVwxl0X2MsNY-UUK2l2-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-34" target="vqVwxl0X2MsNY-UUK2l2-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="335.11764705882365" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-34" value="为写限购写一条数据，并得到限购id" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="870" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-36" value="有对应的降级开关" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="872.5" width="155" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-39" target="vqVwxl0X2MsNY-UUK2l2-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-39" target="vqVwxl0X2MsNY-UUK2l2-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-39" value="获取 京东价格写到 拓展字段中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="950" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-40" value="有对应的降级开关" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="952.5" width="155" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-43" target="vqVwxl0X2MsNY-UUK2l2-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="335.8461538461538" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-43" value="加锁，sku维度的" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="241.25" y="1040" width="188.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-46" target="vqVwxl0X2MsNY-UUK2l2-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-46" target="vqVwxl0X2MsNY-UUK2l2-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1115.3636363636363" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-46" value="1、对 库存 对应的缓存的值 +1&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="236.25" y="1100" width="198.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-48" target="vqVwxl0X2MsNY-UUK2l2-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-48" value="2、向数据库增加一条数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="236.25" y="1160" width="198.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-51" value="current_stock_num_auctionId" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF350D;" vertex="1" parent="1">
+          <mxGeometry x="487.5" y="1100" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-52" target="vqVwxl0X2MsNY-UUK2l2-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-52" value="解锁，sku维度的" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240.63" y="1210" width="188.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-54" target="vqVwxl0X2MsNY-UUK2l2-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-54" target="vqVwxl0X2MsNY-UUK2l2-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-54" value="设置活动缓存 对应的活动数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="236.25" y="1260" width="198.75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-57" value="a_a_a_k__auctionId" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF350D;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1260" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="1359.9090909090908" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-59" target="vqVwxl0X2MsNY-UUK2l2-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="335" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-59" value="要是3min 内&lt;div&gt;活动&lt;span style=&quot;background-color: initial;&quot;&gt;就到达预约时间&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="253.76" y="1320" width="162.49" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-63" value="直接塞到 活动预约开始的延迟队列中 &lt;font color=&quot;#ff350d&quot;&gt;SubStartRepository&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#ff350d&quot;&gt;延迟队列 按照 活动预约时间 进行排序&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1330" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-65" target="vqVwxl0X2MsNY-UUK2l2-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-65" target="vqVwxl0X2MsNY-UUK2l2-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-65" value="发送&lt;font color=&quot;#ff350d&quot;&gt;创建成功&lt;/font&gt;消息到消息队列中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="228" y="1440" width="214" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-68" value="topic：&amp;nbsp;&lt;font color=&quot;#ff350d&quot;&gt;auctionActivityStatus_yfb&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="487.5" y="1435" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-70" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="105" width="432.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-71" value="解锁，reqId 维度的" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="197.5" y="1570" width="275" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-73" value="&lt;font color=&quot;#ff350d&quot; style=&quot;font-size: 18px;&quot;&gt;创建态&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="80" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-74" value="&lt;font color=&quot;#ff350d&quot; style=&quot;font-size: 18px;&quot;&gt;预约态前置&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="80" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-75" target="vqVwxl0X2MsNY-UUK2l2-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-75" target="vqVwxl0X2MsNY-UUK2l2-81">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1685" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-75" value="定时任务，获取 +- 10min 将要进入预约状态，此时状态仍是创建状态的活动" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="90" width="251" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-76" value="塞到 活动预约开始的延迟队列中 &lt;font color=&quot;#ff350d&quot;&gt;SubStartRepository&lt;/font&gt;&lt;div&gt;&lt;font color=&quot;#ff350d&quot;&gt;延迟队列 按照 活动预约时间 进行排序&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="100" width="330" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-79" value="&lt;font color=&quot;#ff350d&quot; style=&quot;font-size: 18px;&quot;&gt;预约态&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="280" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-80" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="150" width="30" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-81" target="vqVwxl0X2MsNY-UUK2l2-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1685.217391304348" y="406.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-81" value="使用 @postConstruct&amp;nbsp; 的方式 在项目初始化的时候，使用IntStream 的方式启动5个线程，执行run 方法" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1530.75" y="287" width="309.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-83" target="vqVwxl0X2MsNY-UUK2l2-86">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1685" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-85" value="&lt;span style=&quot;font-size: 12px; text-wrap-mode: wrap; background-color: rgb(251, 251, 251);&quot;&gt;执行&amp;nbsp;processSubStart 方法&amp;nbsp;&amp;nbsp;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vqVwxl0X2MsNY-UUK2l2-84">
+          <mxGeometry x="-0.1194" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-83" value="获取延迟队列中的数据，poll()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1534.78" y="387" width="301.43" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-86" target="vqVwxl0X2MsNY-UUK2l2-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-86" value="根据 auctionId 查询 活动数据：&lt;div&gt;先查缓存；缓存没有查数据库，并塞回缓存中&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1506" y="500" width="359" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-88" target="vqVwxl0X2MsNY-UUK2l2-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-88" value="活动只有处于创建态 10 的时候才执行后续逻辑" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1515.75" y="580" width="339.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-90">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1840" y="683.4444444444443" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-90" target="vqVwxl0X2MsNY-UUK2l2-100">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1685" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-97" value="要是没有冲突的活动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vqVwxl0X2MsNY-UUK2l2-96">
+          <mxGeometry x="0.0691" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-90" value="检查是否有达到预约期但是时间冲突需要结束的活动" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1595.75" y="640" width="179.5" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-95" value="根据skuId 查询所有的活动，&lt;div&gt;遍历当前sku对应的所有存在的活动，要是存在的活动的状态有 20-预约 或者 30-创建的话就表示有时间冲突的活动，就抛出异常&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="630" width="270" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-98" value="延迟队列的延迟时间、poll 方法" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#7EA6E0;" vertex="1" parent="1">
+          <mxGeometry x="2030" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-99" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0.16;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="vqVwxl0X2MsNY-UUK2l2-98">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1940" y="630" as="sourcePoint" />
+            <mxPoint x="1990" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1990" y="630" />
+              <mxPoint x="2070" y="600" />
+              <mxPoint x="1940" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-100" target="vqVwxl0X2MsNY-UUK2l2-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-100" value="根据 活动id 和前置状态 更新活动的最新状态，要是更新失败，返回等待下次执行" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1462.84" y="777.5" width="445.31" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-104" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-101" target="vqVwxl0X2MsNY-UUK2l2-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-101" value="根据 活动id&amp;nbsp; 获取 活动表 中的活动信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1511.9099999999999" y="860" width="347.16" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-103" target="vqVwxl0X2MsNY-UUK2l2-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-103" value="更新到缓存中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1571.45" y="907.5" width="228.08" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-105" target="vqVwxl0X2MsNY-UUK2l2-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-105" target="vqVwxl0X2MsNY-UUK2l2-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-105" value="对活动的商品打上 拍卖标&lt;div&gt;根据商品sku 查询商品主数据得到POP商家的 venderId或者自营商家的supplyUnit，调用接口执行打标&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1462.84" y="960" width="444.5" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-107" value="有降级开关" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1960" y="973.75" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-109" target="vqVwxl0X2MsNY-UUK2l2-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-109" value="发送状态变化的消息到topic中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1569.74" y="1050" width="231.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-112" value="topic：&amp;nbsp;&lt;font color=&quot;#ff350d&quot;&gt;auctionActivityStatus_yfb&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1852.53" y="1055" width="247.47" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-115" target="vqVwxl0X2MsNY-UUK2l2-123">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2969.666666666667" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-115" value="执行 processEnd 方法&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2900" y="655" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-118" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;width=11.428571428571429;endSize=8.114285714285714;endWidth=21.49659863945578;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-95" target="vqVwxl0X2MsNY-UUK2l2-115">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2140" y="690" as="sourcePoint" />
+            <mxPoint x="2600" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-119" value="活动时间有冲突的话 抛异常，外层捕获之后需要结束活动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="vqVwxl0X2MsNY-UUK2l2-118">
+          <mxGeometry x="-0.149" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-121" value="此时的结束原因为END_REPEAT: 存在未结束的活动" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="2630" y="632" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vqVwxl0X2MsNY-UUK2l2-123" target="vqVwxl0X2MsNY-UUK2l2-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-123" value="根据auctionId 查询缓存中活动信息，要是没有的话，就查询活动表该活动id 对应的活动数据，并存储到缓存中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2802.5" y="767.25" width="335" height="52.75" as="geometry" />
+        </mxCell>
+        <mxCell id="vqVwxl0X2MsNY-UUK2l2-124" value="要是活动信息不存在，抛异常" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2802.5" y="858" width="337" height="22" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
